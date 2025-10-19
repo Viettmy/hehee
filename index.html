@@ -1118,7 +1118,7 @@
             if (indexText < textLetterH2.length) {
                 textLetter.textContent += textLetterH2[indexText];
                 indexText++;
-                setTimeout(indexText, 100);
+                setTimeout(indexText, 50);
             }
             else {
                 clearInterval(timoutTextLetter);
@@ -1139,7 +1139,7 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Hôm nay là chính thức sang tuổi mới rùi nè chúc em bình an, luôn hạnh phúc và gặp nhiều may mắn trong cuộc sống nhá. Hãy luôn giữ mãi nụ cười trên môi nhá và đừng suy nghĩ nhiều về những thứ không đáng nha`. Chúc em có một ngày sinh nhật thật vui vẻ bên gia đình và những người thân yêu. Happy Birthday to you! 🎂🎉🎁";
+        const textLetterP = "Hôm nay là chính thức sang tuổi mới rùi nè\n Chúc em bình an, luôn hạnh phúc và gặp nhiều may mắn trong cuộc sống nhá. Hãy luôn giữ mãi nụ cười trên môi nhá và đừng suy nghĩ nhiều về những thứ không đáng nha`. Chúc em có một ngày sinh nhật thật vui vẻ bên gia đình và những người thân yêu.\n Happy Birthday to you! 🎂🎉🎁";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
@@ -1158,7 +1158,7 @@
             clearInterval(timoutTextLetterContent);
             timoutTextLetterContent = setInterval(() => {
                 textCharLetterContent();
-            }, 100)
+            }, 50)
         }
         $(document).ready(function () {
             $('.valentines').mouseenter(function () {
